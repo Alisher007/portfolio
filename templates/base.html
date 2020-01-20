@@ -11,16 +11,16 @@
 <body>
     <div id="root"></div>
     <script>
-        ! function (f) {
+        ! function (i) {
             function e(e) {
-                for (var r, t, n = e[0], o = e[1], u = e[2], l = 0, p = []; l < n.length; l++) t = n[l], Object
-                    .prototype.hasOwnProperty.call(a, t) && a[t] && p.push(a[t][0]), a[t] = 0;
-                for (r in o) Object.prototype.hasOwnProperty.call(o, r) && (f[r] = o[r]);
-                for (s && s(e); p.length;) p.shift()();
-                return c.push.apply(c, u || []), i()
+                for (var r, t, n = e[0], o = e[1], u = e[2], l = 0, f = []; l < n.length; l++) t = n[l], Object
+                    .prototype.hasOwnProperty.call(a, t) && a[t] && f.push(a[t][0]), a[t] = 0;
+                for (r in o) Object.prototype.hasOwnProperty.call(o, r) && (i[r] = o[r]);
+                for (s && s(e); f.length;) f.shift()();
+                return c.push.apply(c, u || []), p()
             }
 
-            function i() {
+            function p() {
                 for (var e, r = 0; r < c.length; r++) {
                     for (var t = c[r], n = !0, o = 1; o < t.length; o++) {
                         var u = t[o];
@@ -43,9 +43,9 @@
                     l: !1,
                     exports: {}
                 };
-                return f[e].call(r.exports, r, r.exports, l), r.l = !0, r.exports
+                return i[e].call(r.exports, r, r.exports, l), r.l = !0, r.exports
             }
-            l.m = f, l.c = t, l.d = function (e, r, t) {
+            l.m = i, l.c = t, l.d = function (e, r, t) {
                 l.o(e, r) || Object.defineProperty(e, r, {
                     enumerable: !0,
                     get: t
@@ -78,12 +78,12 @@
             }, l.o = function (e, r) {
                 return Object.prototype.hasOwnProperty.call(e, r)
             }, l.p = "/";
-            var r = this.webpackJsonpshopredux = this.webpackJsonpshopredux || [],
+            var r = this.webpackJsonpportfolio = this.webpackJsonpportfolio || [],
                 n = r.push.bind(r);
             r.push = e, r = r.slice();
             for (var o = 0; o < r.length; o++) e(r[o]);
             var s = n;
-            i()
+            p()
         }([])
     </script>
     <script src="{% static 'js/chunk.js' %}"></script>
